@@ -11,6 +11,7 @@ export const Header = ({title = "", tags = false}: Props) => {
         <header className="py-14 px-4 text-center border-b">
             <h2 className="text-3xl">{title}</h2>
 
+            {/* check if the page is tag page */}
             {tags && (
                 <div>
                     <Link href="/tag">#tags</Link>

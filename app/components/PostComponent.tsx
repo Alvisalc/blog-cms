@@ -9,8 +9,8 @@ interface Props {
 export const revalidate = 60;
 
 export const PostComponent = ({post}: Props) => {
-    console.log(post); // checker
 
+    // Check if the fields are missing
     if ( !post.slug || !post.slug.current || !post.title || !post.publishedAt || !post.excerpt) {
         return <div>Post data is incomplete.</div>;
     }
