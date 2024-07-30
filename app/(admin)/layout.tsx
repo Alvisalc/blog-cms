@@ -1,6 +1,7 @@
 import CmsNavbar from "../components/CmsNavbar";
 import { Provider } from "../utils/Provider";
 import "./globals.css";
+import TechIcon from "../../public/tech.svg";
 
 export const metadata = {
   title: "Next.js",
@@ -14,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+        <head>
+        <link rel="icon" href={TechIcon} type="image/svg+xml" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body>
         <Provider>
           <CmsNavbar />

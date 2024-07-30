@@ -8,8 +8,8 @@ import Provider from "../utils/Provider";
 const FiraCode = Fira_Code({subsets: ["latin"]}); // add the font set
 
 export const metadata: Metadata = {
-  title: "Tech Blog",
-  description: "Welcome to the tech blog",
+  title: "Dev Blog",
+  description: "Welcome to the dev blog",
 };
 
 export default function RootLayout({
@@ -19,6 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/tech.svg" type="image/svg+xml" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body  suppressHydrationWarning={true} className={`${FiraCode.className}`}>
         <Provider>
            <Navbar/>
